@@ -1,0 +1,14 @@
+*
+
+!.gitignore
+!devcontainer.json
+!.env.sample
+!claude/
+!claude/settings.sample.json
+!docker/
+!docker/Dockerfile.sample
+!docker/compose.yaml
+!docker/custom.sample.compose.yaml
+!scripts/
+!scripts/initializeCommand.sample.sh
+!scripts/postStartCommand.sample.sh

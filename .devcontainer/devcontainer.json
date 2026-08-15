@@ -1,0 +1,34 @@
+{
+  "name": "Default Dev Container",
+  "dockerComposeFile": ["./docker/compose.yaml", "./docker/custom.compose.yaml"],
+  "service": "development",
+  "initializeCommand": [
+    "sh",
+    "-c",
+    "cd \"${localWorkspaceFolder}/.devcontainer/scripts\" || exit 1; [ -f initializeCommand.sh ] || cp initializeCommand.sample.sh initializeCommand.sh; sh initializeCommand.sh"
+  ],
+  "postStartCommand": ["sh", ".devcontainer/scripts/postStartCommand.sh"],
+  "workspaceFolder": "/devcontainerex",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.cwd": "/devcontainerex",
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "workbench.colorCustomizations": {
+          "titleBar.activeBackground": "#1f6feb",
+          "titleBar.activeForeground": "#ffffff",
+          "titleBar.inactiveBackground": "#1f6feb99",
+          "titleBar.inactiveForeground": "#ffffffcc"
+        }
+      },
+      "extensions": [
+        "anthropic.claude-code",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "mhutchie.git-graph",
+        "rust-lang.rust-analyzer",
+        "vue.volar"
+      ]
+    }
+  }
+}

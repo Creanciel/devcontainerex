@@ -1,0 +1,4 @@
+# Per-environment overrides, merged on top of compose.yaml.
+# Copied to custom.compose.yaml by initializeCommand.sh; edit that copy, it is gitignored.
+services:
+  development: {}

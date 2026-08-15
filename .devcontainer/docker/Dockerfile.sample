@@ -1,0 +1,5 @@
+FROM ghcr.io/creanciel/development:latest
+
+RUN curl -fsSL https://claude.ai/install.sh | bash
+
+WORKDIR /app

@@ -1,0 +1,18 @@
+{
+  "folders": [
+    {
+      "name": "devcontainerex",
+      "path": "."
+    },
+    {
+      "name": "cli",
+      "path": "./apps/devcontainerex"
+    }
+  ],
+  "settings": {
+    "editor.formatOnSave": true,
+    "[rust]": {
+      "editor.defaultFormatter": "rust-lang.rust-analyzer"
+    }
+  }
+}
